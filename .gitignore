@@ -1,0 +1,14 @@
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+.idea
+__pycache__
+venv
+*.tar.gz
+*.tar.xz
+arial
+media
+*.model
