@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework_jwt.views import obtain_jwt_token
 from hitner import views as hitner_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/nlp/', hitner_views.NerView.as_view()),
+    path(r'api-token-auth/', obtain_jwt_token),
 ]
